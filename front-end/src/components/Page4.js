@@ -50,6 +50,7 @@ const Page4 = (props) => {
     file_data.append("csvFiles", householdsFile[0]);
 
     if (userName && dataSetName) {
+      setLoading(true);
       const { status } = await fetch(
         Backend_API + `csvupload/${userName}/${dataSetName}`,
         {
@@ -57,7 +58,6 @@ const Page4 = (props) => {
           body: file_data,
         }
       );
-        setLoading(true);
       if (status === 200) {
         setLoading(false);
 
