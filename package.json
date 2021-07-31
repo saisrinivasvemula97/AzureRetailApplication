@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node index.js",
-    "backend": "nodemon index.js"
+    "backend": "nodemon index.js",
+    "azure": "npm install --prefix front-end && npm run build --prefix front-end && npm start"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
