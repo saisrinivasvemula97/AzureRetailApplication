@@ -132,7 +132,7 @@ const Page1 = (props) => {
             onChange={(e) => setHouseHoldNumber(e.target.value)}
             className="form-control bg-light mb-4"
           />
-          <button class="btn btn-outline-danger my-2 my-sm-0">Search</button>
+          <button class="btn btn-outline-warning my-2 my-sm-0">Search</button>
         </form>
 
         <div id="messageDisplayArea">
@@ -142,9 +142,9 @@ const Page1 = (props) => {
       <table
         id="houseHoldDetails"
         style={{ fontSize: "11px" }}
-        className="table-primary table table-sm"
+        className="table-primary table table-sm table-dark"
       >
-        <thead id="tableHeader" className="table"></thead>
+        <thead id="tableHeader" className="table" style={{ color:"#ffc107"}}></thead>
         <tbody id="tableBody"></tbody>
       </table>
     </div>

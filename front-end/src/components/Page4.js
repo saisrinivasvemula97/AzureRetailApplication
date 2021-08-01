@@ -1,28 +1,8 @@
 import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-// import { makeStyles } from '@material-ui/core/styles';
+import '../styles/page4.css';
+
 const { Backend_API } = require("../utils/Backend_API");
-
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     display: 'flex',
-//     '& > * + *': {
-//       marginLeft: theme.spacing(2),
-//     },
-//   },
-// }));
-
-// export default function CircularIndeterminate() {
-//   const classes = useStyles();
-
-//   return (
-//     <div className={classes.root}>
-//       <CircularProgress />
-//       <CircularProgress color="secondary" />
-//     </div>
-//   );
-// }
-
 
 const Page4 = (props) => {
   const [dataSetName, setDataSetName] = useState("");
@@ -104,8 +84,8 @@ const Page4 = (props) => {
               required
             />
           </div>
-          <table style={{ width: "50%", margin: "50px auto" }}>
-            <thead>
+          <table style={{ width: "30%", margin: "50px auto" }}>
+            <thead style={{textAlign: 'left'}}>
               <tr>
                 <th>Transactions</th>
                 <th>Products</th>

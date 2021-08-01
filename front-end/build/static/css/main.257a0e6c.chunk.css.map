@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/styles/page4.css"],"names":[],"mappings":"AAAA,eACE,iBAAkB,CAClB,SAAU,CACV,gBACF","file":"main.257a0e6c.chunk.css","sourcesContent":["#mainContainer {\r\n  text-align: center;\r\n  width: 50%;\r\n  margin: 50px auto;\r\n}\r\n"]}
