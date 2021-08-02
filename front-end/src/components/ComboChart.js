@@ -1,7 +1,7 @@
 import { Chart } from "react-google-charts";
 
 const ComboChart = () => {
-  return (
+  return ([
     <div>
       <Chart
         width={"900px"}
@@ -22,8 +22,29 @@ const ComboChart = () => {
           series: { 3: { type: "line" } },
         }}
       />
-    </div>
-  );
+    </div>,
+    <div>
+    <Chart
+      width={"900px"}
+      height={"500px"}
+      chartType="ComboChart"
+      loader={<div>Loading Chart</div>}
+      data={[
+        ["Year", "Central", "East", "South", "West"],
+        ["2018", 37789, 51013, 42231, 46294],
+        ["2019", 98078, 134975, 109771, 117011],
+        ["2020", 65218, 83293, 67313, 69022]
+      ]}
+      options={{
+        title: "Customer Demographic-Wise Transactions for the years 2018,19 and 20",
+        vAxis: { title: "Dollars" },
+        hAxis: { title: "Year" },
+        seriesType: "bars",
+        series: { 4: { type: "line" } },
+      }}
+    />
+  </div>
+  ]);
 };
 
 export default ComboChart;

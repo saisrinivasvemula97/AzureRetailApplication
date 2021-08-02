@@ -1,7 +1,7 @@
 import { Chart } from "react-google-charts";
 const PieChart = () => {
   return (
-    <div>
+    [<div>
       <Chart
         chartType="PieChart"
         loader={<div>Loading Chart</div>}
@@ -56,7 +56,26 @@ const PieChart = () => {
           height: 600,
         }}
       />
-    </div>
+    </div>, 
+    <div>
+    <Chart
+      chartType="PieChart"
+      loader={<div>Loading Chart</div>}
+      data={[
+        ["Region", "Spend"],
+        ["West", 1347560.33],
+        ["East", 1513313.6],
+        ["Central", 1277791.82],
+        ["South", 1205535.49]
+      ]}
+      options={{
+        title: "Total Demographic-Wise Spend During 2018-20 in Dollars($)",
+        width: 600,
+        height: 600,
+      }}
+    />
+  </div>
+    ]
   );
 };
 
