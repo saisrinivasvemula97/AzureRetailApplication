@@ -8,6 +8,7 @@ router.post("/", async (req, res) => {
 
   //Check if the user_name exists in users list already
   const userExists = await checkIfUserExistsInDB(new_user_data.userName);
+  
   if (userExists) {
     res.send({ userExists: true });
   } else {
